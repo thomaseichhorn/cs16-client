@@ -1473,7 +1473,6 @@ void UI_Precache( void )
 	UI_GamePad_Precache();
 	UI_CreateGame_Precache();
 	UI_Audio_Precache();
-	UI_Video_Precache();
 	UI_VidOptions_Precache();
 	UI_Credits_Precache();
 	UI_Touch_Precache();
