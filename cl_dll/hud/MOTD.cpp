@@ -146,7 +146,7 @@ int CHudMOTD :: MsgFunc_MOTD( const char *pszName, int iSize, void *pbuf )
 	strcat( m_szMOTD, reader.ReadString() );
 
 	// we still don't support html tags in motd :(
-	if( strcasestr( m_szMOTD, "<!DOCTYPE HTML>" ) )
+	if( strcmp( m_szMOTD, "<!DOCTYPE HTML>" ) )
 	{
 		Reset();
 		ignoreThisMotd = true;
