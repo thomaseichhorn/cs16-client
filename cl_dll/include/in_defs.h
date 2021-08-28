@@ -16,6 +16,7 @@
 #define	ROLL	2 
 
 #ifdef _WIN32
+#include <port.h>
 #include <windows.h>
 #else
 #ifndef PORT_H
